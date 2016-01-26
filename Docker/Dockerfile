@@ -12,3 +12,6 @@ RUN \
 	echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections && \
 	apt-get update && \
 	apt-get install --assume-yes oracle-jdk7-installer
+
+# Unzip the latest LogicalDoc
+RUN apt-get install --assume-yes unzip
