@@ -13,5 +13,8 @@ RUN \
 	apt-get update && \
 	apt-get install --assume-yes oracle-jdk7-installer
 
+# Download latest LogicalDoc
+RUN wget -O /tmp/latest_logical_doc.zip 'http://sourceforge.net/projects/logicaldoc/files/latest/download'
+
 # Unzip the latest LogicalDoc
 RUN apt-get install --assume-yes unzip
